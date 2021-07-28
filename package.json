@@ -24,6 +24,9 @@
         "@nestjs/core": "^8.0.0",
         "@nestjs/platform-express": "^8.0.0",
         "@nestjs/swagger": "^5.0.4",
+        "class-transformer": "^0.4.0",
+        "class-validator": "^0.13.0",
+        "express": "4.0.0",
         "reflect-metadata": "^0.1.13",
         "rimraf": "^3.0.2",
         "rxjs": "^7.2.0",
@@ -49,7 +52,8 @@
         "ts-loader": "^9.2.3",
         "ts-node": "^10.0.0",
         "tsconfig-paths": "^3.10.1",
-        "typescript": "^4.3.5"
+        "typescript": "^4.3.5",
+        "webpack": "5.0.0"
     },
     "jest": {
         "moduleFileExtensions": [
@@ -82,24 +86,31 @@
         "jsxSingleQuote": true
     },
     "eslintConfig": {
-      "parser": "@typescript-eslint/parser",
-      "parserOptions": {
-          "project": "tsconfig.json",
-          "sourceType": "module"
-      },
-      "plugins": ["@typescript-eslint/eslint-plugin"],
-      "extends": ["plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
-      "root": true,
-      "env": {
-          "node": true,
-          "jest": true
-      },
-      "ignorePatterns": [".eslintrc.js"],
-      "rules": {
-          "@typescript-eslint/interface-name-prefix": "off",
-          "@typescript-eslint/explicit-function-return-type": "off",
-          "@typescript-eslint/explicit-module-boundary-types": "off",
-          "@typescript-eslint/no-explicit-any": "off"
-      }
+        "parser": "@typescript-eslint/parser",
+        "parserOptions": {
+            "project": "tsconfig.json",
+            "sourceType": "module"
+        },
+        "plugins": [
+            "@typescript-eslint/eslint-plugin"
+        ],
+        "extends": [
+            "plugin:@typescript-eslint/recommended",
+            "plugin:prettier/recommended"
+        ],
+        "root": true,
+        "env": {
+            "node": true,
+            "jest": true
+        },
+        "ignorePatterns": [
+            ".eslintrc.js"
+        ],
+        "rules": {
+            "@typescript-eslint/interface-name-prefix": "off",
+            "@typescript-eslint/explicit-function-return-type": "off",
+            "@typescript-eslint/explicit-module-boundary-types": "off",
+            "@typescript-eslint/no-explicit-any": "off"
+        }
     }
 }
